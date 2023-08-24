@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Checkout Scorps</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/img/icon.jpg" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400&display=swap"
+      rel="stylesheet" />
+    <link href="assets/fonts/GlacialIndifference-Regular.otf" />
+    <link href="assets/fonts/GlacialIndifference-Italic.otf" />
+    <link href="assets/fonts/GlacialIndifference-Bold.otf" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- checkout css aranaz template -->
+    <link
+      rel="stylesheet"
+      href="assets/others/checkoutform/css/nice-select.css" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style - checkout.css" rel="stylesheet" />
+
+    <!-- other css -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Mukta:300,400,700" />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+
+    <link rel="stylesheet" href="css/checkout/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/checkout/magnific-popup.css" />
+    <link rel="stylesheet" href="css/checkout/jquery-ui.css" />
+    <link rel="stylesheet" href="css/checkout/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/checkout/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/checkout/aos.css" />
+    <link rel="stylesheet" href="css/checkout/style.css" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="assets/img/logo-icon.png" alt="" class="img-fluid"
+          /></a>
+        </div>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto active" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="about-us.html">About Us</a>
+            </li>
+            <li class="dropdown">
+              <a href="#services"
+                ><span>Shop</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="featured-products.html">Featured Products</a></li>
+                <li><a href="shop.html">All Products</a></li>
+                <li><a href="">Pre-order Form</a></li>
+              </ul>
+            </li>
+
+            <li><a class="nav-link scrollto" href="faqs.html">FAQs</a></li>
+            <li class="dropdown active">
+              <a href=""
+                ><span>Support</span><i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="help-center.html">Help Center</a></li>
+                <li><a href="chat.html">Customer Support</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href=""
+                ><span>Profile</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="">Username</a></li>
+                <li><a href="cart.html">View Cart</a></li>
+                <li><a href="profile.html">View Account</a></li>
+                <li><a href="logout.html">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+      <!--================Home Banner Area =================-->
+      <!-- breadcrumb start-->
+      <div class="breadcrumb breadcrumb_bg">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="breadcrumb_iner">
+                <div class="breadcrumb_iner_item">
+                  <div class="text-center">
+                    <h2>Product Checkout</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- breadcrumb start-->
+
+      <!--================Checkout Area =================-->
+      <section class="checkout_area padding_top">
+        <div class="site-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 mb-5 mb-md-0">
+                <h2 class="h3 mb-3 text-black">Billing Details</h2>
+                <div class="p-3 p-lg-5 border">
+                  <!-- billing address -->
+                  <form action="" method="post">
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label for="fname" class="text-black"
+                          >First Name <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="fname"
+                          name="fname" />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="lname" class="text-black"
+                          >Last Name <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="lname"
+                          name="lname" />
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <div class="col-md-12">
+                        <label for="address" class="text-black"
+                          >Address <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="address"
+                          name="address" />
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <div class="col-md-12">
+                        <label for="barangay" class="text-black"
+                          >Barangay <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="barangay"
+                          name="barangay" />
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <div class="col-md-12">
+                        <label for="city" class="text-black"
+                          >City or Municipality
+                          <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="city"
+                          name="city" />
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="province" class="text-black"
+                        >Provinces <span class="text-danger">*</span></label
+                      >
+                      <select
+                        id="province"
+                        class="form-control"
+                        name="province">
+                        <option value="0"></option>
+                        <option value="1">San Juan</option>
+                        <option value="2">Valenzuela</option>
+                        <option value="3">Makati</option>
+                        <option value="4">Quezon City</option>
+                        <option value="5">Manila</option>
+                        <option value="6">Pasay</option>
+                        <option value="7">Caloocan</option>
+                        <option value="8">Navotas</option>
+                        <option value="9">Malabon</option>
+                        <option value="10">Mandaluyon</option>
+                        <option value="11">Pasig</option>
+                        <option value="12">Pateros</option>
+                        <option value="13">Taguig</option>
+                        <option value="14">Parañaque</option>
+                        <option value="15">Las Piñas</option>
+                        <option value="16">Muntinlupa</option>
+                        <option value="17">Marikina</option>
+                        <option value="18">Rizal</option>
+                        <option value="19">Pampanga</option>
+                        <option value="20">Bataan</option>
+                        <option value="21">Zambales</option>
+                        <option value="22">Tarlac</option>
+                        <option value="23">Pangasinan</option>
+                        <option value="24">La Union</option>
+                        <option value="25">Benguet</option>
+                        <option value="26">Mountain Province</option>
+                        <option value="27">Ilocos Sur</option>
+                        <option value="28">Abra</option>
+                        <option value="29">Ilocos Norte</option>
+                        <option value="30">Bulacan</option>
+                        <option value="31">Nueva Ecija</option>
+                        <option value="32">Aurora</option>
+                        <option value="33">Quirino</option>
+                        <option value="34">Cagayan</option>
+                        <option value="35">Ifugao</option>
+                        <option value="36">Nueva Vizcaya</option>
+                        <option value="37">Kalinga</option>
+                        <option value="38">Apayao</option>
+                        <option value="39">Laguna</option>
+                        <option value="40">Batanes</option>
+                        <option value="41">Cavite</option>
+                        <option value="42">Batangas</option>
+                        <option value="43">Camarines Sur</option>
+                        <option value="44">Albay</option>
+                        <option value="45">Camarines Norte</option>
+                        <option value="46">Sorsogon</option>
+                        <option value="47">Cantanduanes</option>
+                        <option value="48">Marinduque</option>
+                        <option value="49">iloilo</option>
+                        <option value="50">Guimaras</option>
+                        <option value="51">Occidental Mindoro</option>
+                        <option value="52">Oriental Mindoro</option>
+                        <option value="53">Palawan</option>
+                        <option value="54">Masbate</option>
+                        <option value="55">Romblon</option>
+                        <option value="56">Aklan</option>
+                        <option value="57">Antique</option>
+                        <option value="58">Capiz</option>
+                        <option value="59">Cebu</option>
+                        <option value="60">Negros Occidental</option>
+                        <option value="61">Negros Oriental</option>
+                        <option value="62">Siquijor</option>
+                        <option value="63">Bohol</option>
+                        <option value="64">Northern Samar</option>
+                        <option value="65">Leyte</option>
+                        <option value="66">Biliran</option>
+                        <option value="67">Southern Leyte</option>
+                        <option value="68">Samar</option>
+                        <option value="69">Eastern Samar</option>
+                        <option value="70">Zamboanga del Sur</option>
+                        <option value="71">Zamboanga Sibugay</option>
+                        <option value="72">Zamboanga del Norte</option>
+                        <option value="73">Misamis Occidental</option>
+                        <option value="74">Basilan</option>
+                        <option value="75">Sulu</option>
+                        <option value="76">Tawi-Tawi</option>
+                        <option value="77">Davao del Sur</option>
+                        <option value="78">Davao Occidental</option>
+                        <option value="79">Davao del Norte</option>
+                        <option value="80">Davao Oriental</option>
+                        <option value="81">Surigao del Sur</option>
+                        <option value="82">Surigao del Norte</option>
+                        <option value="83">Dinagat Islands</option>
+                        <option value="84">Agusan del Sur</option>
+                        <option value="85">Agusan del Norte</option>
+                        <option value="86">Bukidnon</option>
+                        <option value="87">Davao de Oro</option>
+                        <option value="88">Camiguin</option>
+                        <option value="89">Lanao del Norte</option>
+                        <option value="90">Lanao del Sur</option>
+                        <option value="91">Cotobato</option>
+                        <option value="92">South Cotobato</option>
+                        <option value="93">Sarangani</option>
+                        <option value="94">Manguindanao</option>
+                        <option value="95">Sultan Kudarat</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label for="region" class="text-black"
+                          >Region <span class="text-danger">*</span></label
+                        >
+                        <select id="region" class="form-control">
+                          <option value="0"></option>
+                          <option value="1">NCR</option>
+                          <option value="2">CAR</option>
+                          <option value="3">Region 1 - Ilocaos Region</option>
+                          <option value="4">Region 2 - Cagayan Valley</option>
+                          <option value="5">Region 3 - Central Luzon</option>
+                          <option value="6">Region 4-A - CALABARZON</option>
+                          <option value="7">MIMAROPA</option>
+                          <option value="8">Region 5 - Bicol Region</option>
+                          <option value="9">Region 6 - Western Visayas</option>
+                          <option value="10">Region 7 - Central Visayas</option>
+                          <option value="11">Region 8 - Eastern Visayas</option>
+                          <option value="12">
+                            Region 9 - Zamboanga Peninsula
+                          </option>
+                          <option value="13">
+                            Region 10 - Northern Mindanao
+                          </option>
+                          <option value="14">Region 11 - Davao Region</option>
+                          <option value="15">Region 12 - Soccsksargen</option>
+                          <option value="16">Region 13 - Caraga</option>
+                          <option value="17">Bangsamoro</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="postal" class="text-black"
+                          >Postal / Zip
+                          <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="postal"
+                          name="postal" />
+                      </div>
+                    </div>
+
+                    <div class="form-group row mb-5">
+                      <div class="col-md-6">
+                        <label for="email" class="text-black"
+                          >Email Address
+                          <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          name="email" />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="phone" class="text-black"
+                          >Phone <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="phone"
+                          name="phone" />
+                      </div>
+                    </div>
+                  </form>
+
+                  <!-- different shipping address -->
+                  <form action="" method="post">
+                    <div class="form-group">
+                      <label
+                        for="c_ship_different_address"
+                        class="text-black"
+                        data-toggle="collapse"
+                        href="#ship_different_address"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="ship_different_address"
+                        ><input
+                          type="checkbox"
+                          value="1"
+                          id="c_ship_different_address" />
+                        Ship To A Different Address?</label
+                      >
+                      <div class="collapse" id="ship_different_address">
+                        <div class="py-2">
+                          <div class="form-group row">
+                            <div class="col-md-6">
+                              <label for="diff_fname" class="text-black"
+                                >First Name
+                                <span class="text-danger">*</span></label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="diff_fname"
+                                name="diff_fname" />
+                            </div>
+                            <div class="col-md-6">
+                              <label for="diff_lname" class="text-black"
+                                >Last Name
+                                <span class="text-danger">*</span></label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="diff_lname"
+                                name="diff_lname" />
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <div class="col-md-12">
+                              <label for="diff_address" class="text-black"
+                                >Address
+                                <span class="text-danger">*</span></label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="diff_address"
+                                name="diff_address"
+                                placeholder="Street address" />
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <div class="col-md-12">
+                              <label for="diff_city" class="text-black"
+                                >City or Municipality
+                                <span class="text-danger">*</span></label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="diff_city"
+                                name="diff_city"
+                                placeholder="" />
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="diff_province" class="text-black"
+                              >Province
+                              <span class="text-danger">*</span></label
+                            >
+                            <select id="diff_province" class="form-control">
+                              <option value="0"></option>
+                              <option value="1">San Juan</option>
+                              <option value="2">Valenzuela</option>
+                              <option value="3">Makati</option>
+                              <option value="4">Quezon City</option>
+                              <option value="5">Manila</option>
+                              <option value="6">Pasay</option>
+                              <option value="7">Caloocan</option>
+                              <option value="8">Navotas</option>
+                              <option value="9">Malabon</option>
+                              <option value="10">Mandaluyon</option>
+                              <option value="11">Pasig</option>
+                              <option value="12">Pateros</option>
+                              <option value="13">Taguig</option>
+                              <option value="14">Parañaque</option>
+                              <option value="15">Las Piñas</option>
+                              <option value="16">Muntinlupa</option>
+                              <option value="17">Marikina</option>
+                              <option value="18">Rizal</option>
+                              <option value="19">Pampanga</option>
+                              <option value="20">Bataan</option>
+                              <option value="21">Zambales</option>
+                              <option value="22">Tarlac</option>
+                              <option value="23">Pangasinan</option>
+                              <option value="24">La Union</option>
+                              <option value="25">Benguet</option>
+                              <option value="26">Mountain Province</option>
+                              <option value="27">Ilocos Sur</option>
+                              <option value="28">Abra</option>
+                              <option value="29">Ilocos Norte</option>
+                              <option value="30">Bulacan</option>
+                              <option value="31">Nueva Ecija</option>
+                              <option value="32">Aurora</option>
+                              <option value="33">Quirino</option>
+                              <option value="34">Cagayan</option>
+                              <option value="35">Ifugao</option>
+                              <option value="36">Nueva Vizcaya</option>
+                              <option value="37">Kalinga</option>
+                              <option value="38">Apayao</option>
+                              <option value="39">Laguna</option>
+                              <option value="40">Batanes</option>
+                              <option value="41">Cavite</option>
+                              <option value="42">Batangas</option>
+                              <option value="43">Camarines Sur</option>
+                              <option value="44">Albay</option>
+                              <option value="45">Camarines Norte</option>
+                              <option value="46">Sorsogon</option>
+                              <option value="47">Cantanduanes</option>
+                              <option value="48">Marinduque</option>
+                              <option value="49">iloilo</option>
+                              <option value="50">Guimaras</option>
+                              <option value="51">Occidental Mindoro</option>
+                              <option value="52">Oriental Mindoro</option>
+                              <option value="53">Palawan</option>
+                              <option value="54">Masbate</option>
+                              <option value="55">Romblon</option>
+                              <option value="56">Aklan</option>
+                              <option value="57">Antique</option>
+                              <option value="58">Capiz</option>
+                              <option value="59">Cebu</option>
+                              <option value="60">Negros Occidental</option>
+                              <option value="61">Negros Oriental</option>
+                              <option value="62">Siquijor</option>
+                              <option value="63">Bohol</option>
+                              <option value="64">Northern Samar</option>
+                              <option value="65">Leyte</option>
+                              <option value="66">Biliran</option>
+                              <option value="67">Southern Leyte</option>
+                              <option value="68">Samar</option>
+                              <option value="69">Eastern Samar</option>
+                              <option value="70">Zamboanga del Sur</option>
+                              <option value="71">Zamboanga Sibugay</option>
+                              <option value="72">Zamboanga del Norte</option>
+                              <option value="73">Misamis Occidental</option>
+                              <option value="74">Basilan</option>
+                              <option value="75">Sulu</option>
+                              <option value="76">Tawi-Tawi</option>
+                              <option value="77">Davao del Sur</option>
+                              <option value="78">Davao Occidental</option>
+                              <option value="79">Davao del Norte</option>
+                              <option value="80">Davao Oriental</option>
+                              <option value="81">Surigao del Sur</option>
+                              <option value="82">Surigao del Norte</option>
+                              <option value="83">Dinagat Islands</option>
+                              <option value="84">Agusan del Sur</option>
+                              <option value="85">Agusan del Norte</option>
+                              <option value="86">Bukidnon</option>
+                              <option value="87">Davao de Oro</option>
+                              <option value="88">Camiguin</option>
+                              <option value="89">Lanao del Norte</option>
+                              <option value="90">Lanao del Sur</option>
+                              <option value="91">Cotobato</option>
+                              <option value="92">South Cotobato</option>
+                              <option value="93">Sarangani</option>
+                              <option value="94">Manguindanao</option>
+                              <option value="95">Sultan Kudarat</option>
+                            </select>
+                          </div>
+
+                          <div class="form-group row">
+                            <div class="col-md-6">
+                              <label for="diff_region" class="text-black"
+                                >Region
+                                <span class="text-danger">*</span></label
+                              >
+                              <select id="diff_region" class="form-control">
+                                <option value="0"></option>
+                                <option value="1">NCR</option>
+                                <option value="2">CAR</option>
+                                <option value="3">
+                                  Region 1 - Ilocaos Region
+                                </option>
+                                <option value="4">
+                                  Region 2 - Cagayan Valley
+                                </option>
+                                <option value="5">
+                                  Region 3 - Central Luzon
+                                </option>
+                                <option value="6">
+                                  Region 4-A - CALABARZON
+                                </option>
+                                <option value="7">MIMAROPA</option>
+                                <option value="8">
+                                  Region 5 - Bicol Region
+                                </option>
+                                <option value="9">
+                                  Region 6 - Western Visayas
+                                </option>
+                                <option value="10">
+                                  Region 7 - Central Visayas
+                                </option>
+                                <option value="11">
+                                  Region 8 - Eastern Visayas
+                                </option>
+                                <option value="12">
+                                  Region 9 - Zamboanga Peninsula
+                                </option>
+                                <option value="13">
+                                  Region 10 - Northern Mindanao
+                                </option>
+                                <option value="14">
+                                  Region 11 - Davao Region
+                                </option>
+                                <option value="15">
+                                  Region 12 - Soccsksargen
+                                </option>
+                                <option value="16">Region 13 - Caraga</option>
+                                <option value="17">Bangsamoro</option>
+                              </select>
+                            </div>
+
+                            <div class="col-md-6">
+                              <label for="diff_postal" class="text-black"
+                                >Postal / Zip
+                                <span class="text-danger">*</span></label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="diff_postal"
+                                name="diff_postal_zip" />
+                            </div>
+                          </div>
+
+                          <div class="form-group row mb-5">
+                            <div class="col-md-6">
+                              <label for="diff_email" class="text-black"
+                                >Email Address
+                                <span class="text-danger">*</span></label
+                              >
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="diff_email"
+                                name="diff_email" />
+                            </div>
+                            <div class="col-md-6">
+                              <label for="diff_phone" class="text-black"
+                                >Phone <span class="text-danger">*</span></label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="diff_phone"
+                                name="diff_phone"
+                                placeholder="Phone Number" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="row mb-5">
+                  <div class="col-md-12">
+                    <h2 class="h3 mb-3 text-black">Your Order</h2>
+                    <form action="" method="post">
+                      <div class="p-3 p-lg-5 border">
+                        <table class="table site-block-order-table mb-5">
+                          <thead>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                          </thead>
+                          <tbody>
+                            <form action="" method="post">
+                              <tr>
+                                <td>product_name</td>
+                                <td>quantity</td>
+                                <td>price</td>
+                                <td>
+                                  <input
+                                    type="submit"
+                                    name="remove_checkout"
+                                    style="margin-top: 5px"
+                                    class="btn btn-fail"
+                                    value="x" />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-black font-weight-bold">
+                                  <strong>Order Total</strong>
+                                </td>
+                                <td></td>
+                                <td class="text-black font-weight-bold">
+                                  <strong>$ 12345.00</strong>
+                                </td>
+                              </tr>
+                            </form>
+                          </tbody>
+                        </table>
+
+                        <div class="border p-3 mb-3">
+                          <h3 class="h6 mb-0">
+                            <a
+                              class="d-block"
+                              data-toggle="collapse"
+                              href="#collapsebank"
+                              role="button"
+                              aria-expanded="false"
+                              aria-controls="collapsebank">
+                              Pay via GCASH
+                            </a>
+                          </h3>
+
+                          <div class="collapse" id="collapsebank">
+                            <div class="py-2">
+                              <p class="mb-0">
+                                Make your payment directly into our bank
+                                account. Please use your Order ID as the payment
+                                reference. Your order won’t be shipped until the
+                                funds have cleared in our account.
+                              </p>
+                            </div>
+                            <div class="form-group">
+                              <input
+                                type="submit"
+                                class="btn btn-primary"
+                                name="gcash_pmthd"
+                                value="Place Order via GCASH Money Transfer" />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="border p-3 mb-3">
+                          <h3 class="h6 mb-0">
+                            <a
+                              class="d-block"
+                              data-toggle="collapse"
+                              href="#collapsecheque"
+                              role="button"
+                              aria-expanded="false"
+                              aria-controls="collapsecheque">
+                              Pay via BDO Bank Transfer
+                            </a>
+                          </h3>
+
+                          <div class="collapse" id="collapsecheque">
+                            <div class="py-2">
+                              <p class="mb-0">
+                                Make your payment directly into our bank
+                                account. Please use your Order ID as the payment
+                                reference. Your order won’t be shipped until the
+                                funds have cleared in our account.
+                              </p>
+                              <div class="form-group">
+                                <input
+                                  type="submit"
+                                  class="btn btn-primary"
+                                  name="BDO_pmthd"
+                                  value="Place Order via BDO Bank Transfer" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- </form> -->
+          </div>
+        </div>
+      </section>
+      <!--================End Checkout Area =================-->
+    </main>
+    <!-- End #main -->
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-info">
+              <h3>Scorps PH</h3>
+              <p>
+                San Pedro 4023, Laguna <br />
+                <br />
+                <strong>Phone:</strong> 09164388363<br />
+                <strong>Email:</strong> scorpsph@gmail.com<br />
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="index.php">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="about-us.php">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="faqs.php">FAQs</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="help-center.php">Help Center</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Shop</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="featured-products.php">Featured Products</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="shop.php">All Products</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="">Pre-order Form</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Our Newsletter</h4>
+              <p>
+                Get the latest updates about our new products and news-related
+                to our store!
+              </p>
+              <form action="" method="post">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Scorps PH</span></strong
+          >. <br />
+          All Rights Reserved 2021.
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/checkout/main.js"></script>
+    <script src="assets/js/checkout/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/checkout/jquery-ui.js"></script>
+    <script src="assets/js/checkout/popper.min.js"></script>
+    <script src="assets/js/checkout/bootstrap.min.js"></script>
+    <script src="assets/js/checkout/owl.carousel.min.js"></script>
+    <script src="assets/js/checkout/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/checkout/aos.js"></script>
+  </body>
+</html>
