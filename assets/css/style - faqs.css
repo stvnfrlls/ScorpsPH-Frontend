@@ -290,11 +290,10 @@ font-family: "Glacial Indifference", sans-serif;
     background-color: #F6E7E4;
     align-items: center;
     justify-content: center;
-    padding-left: 300px;
-    padding-right: 300px;
   }
+
   .info-box .content {
-    padding: 60px 100px 0 100px;
+    padding: 30px 0;
     text-align: center;
   }
   
@@ -319,13 +318,9 @@ font-family: "Glacial Indifference", sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    min-height: 400px;
-  }
-  
-  .info-box .accordion-list {
-    padding: 0 100px 60px 100px;
 
   }
+  
   
   .info-box .accordion-list ul {
     padding: 0;
@@ -434,6 +429,24 @@ font-family: "Glacial Indifference", sans-serif;
       padding-bottom: 30px;
     }
   }
+
+  @media (max-width:720px) {
+    .info-box .row {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .info-box .row {
+        width: 60%;
+        margin: auto;
+    }
+  }
+
+  
 
 /*--------------------------------------------------------------
 # Back to top button
